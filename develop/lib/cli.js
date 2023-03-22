@@ -34,9 +34,11 @@ class CLI {
       .prompt(questions)
       .then(({text, textColor, shapeType, ShapeColor})=>{
         const svg = new SVG();
+        let shape;
+
         svg.setText(text, textColor);
         svg.setShape(shape);
-        let shape;
+        
         switch (shapeType) {
           case "square":
             shape = new Square();
