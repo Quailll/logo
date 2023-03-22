@@ -11,7 +11,7 @@ class CLI {
         message: "Name of logo. Logo name has to be up to three characters.",
         name: "text",
         validate: (text) =>
-          text.length <= 3 || "Logo name must contain 3 characters", 
+          text.length === 3 || "Logo name must contain 3 characters", 
       },
       {
         type: "input",
@@ -19,13 +19,13 @@ class CLI {
         name: "textColor",
       },
       {
-        type: "list"
+        type: "list",
         message: "What shape would you like your logo to be?",
         choices: ["circle", "square", "triangle"],
         name: "shapeType",
       },
       {
-        type: "input"
+        type: "input",
         message: "What color would you like your logo shape to be?",
         name: "shapeColor",
       }
@@ -41,10 +41,10 @@ class CLI {
           case "square":
             shape = new Square();
             break;
-          case "triangle"
+          case "triangle":
             shape = new Triangle();
             break;
-          case "circle"
+          case "circle":
             shape = new Circle();
             break;
         }
