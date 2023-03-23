@@ -13,14 +13,14 @@ class Triangle extends Shape {
 }
 class Square extends Shape {
   render() {
-    return `<rect width="200" height="200" x="150" y="100" fill"${this.color}" /> `;
+    return `<rect x="60" y="10" width="180" height="180" fill="${this.color}" /> `;
   }
 }
 
 class Circle extends Shape {
   render(){
-    return `<circle cx="150" cy="100" r="60" fill="${this.color}" />`;
+    return `<circle cx="150" cy="100" r="90" fill="${this.color}" />`;
   }
 }
 
-module.exports = Shape
+module.exports = {Circle,Square,Triangle}
