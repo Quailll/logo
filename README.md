@@ -8,10 +8,9 @@ Generate a logo through javascript and have it show up with the choices you made
 - When I was working on this challenge and checking my work the main and mine look very similar, but I used everything that our instructor gave us and did it the way he showed. 
 ## Links
 https://github.com/Quailll/logo
-
+https://drive.google.com/file/d/1FvDauJZ1FI5nRHy8qI5yNZg6ax7q3VB7/view
 ## Installation
 - Install npm and also npm inquirer and jest.
-
 
 ## Usage
 - Being able to create a logo through javascript 

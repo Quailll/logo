@@ -4,7 +4,7 @@ describe('Circle', () =>{
   {
     const svg = '<circle cx="150" cy="100" r="90" fill="blue" />';
     const circle = new Circle();
-    circle.setColor("blue");
+    circle.setColor("red");
     const realSvg = circle.render();
     expect(realSvg).toEqual(svg);
   });
@@ -27,7 +27,7 @@ describe("Triangle", () => {
     const svg =
       '<polygon points="150, 18 244, 182 56, 182" fill="blue" />';
     const triangle = new Triangle();
-    triangle.setColor("blue");
+    triangle.setColor("yellow");
     const realSvg = triangle.render();
     expect(realSvg).toEqual(svg);
   });
